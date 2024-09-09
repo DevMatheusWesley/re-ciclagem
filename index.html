@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-ciclagem</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #6c6cec;
+        }
+        nav {
+            background-color: #1f1f4d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2{
+            color: white; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section-1 { background-image: url('imagem1.jpg'); }
+        .section-2 { background-image: url('imagem2.jpg'); text-align: left; }
+        .section-3 { background-image: url('imagem3.jpg'); text-align: right; }
+        .section-4 { background-image: url('imagem4.jpg'); text-align: left; }
+        .section-5 { background-image: url('imagem5.jpg'); }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+        }
+        .video {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
+            border-radius: 50px;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        footer {
+            background-color: #4927e4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (min-width: 600px) {
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#marca-re">Marca Ré</a>
+        <a href="#meio-ambiente">Meio Ambiente</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#video">Vídeo</a>
+        <a href="#agradecimentos">Agradecimentos</a>
+    </nav>
+
+    <div id="inicio" class="section section-1">
+        
+        <img src="./assets/img/imagem1.jpg" alt="Imagem de Início">
+    </div>
+    <div id="marca-re" class="section section-2">
+        <h2>Marca Ré</h2>
+        <img src="./assets/img/imagem2.jpg" alt="Imagem de Marca Ré">
+    </div>
+    <div id="meio-ambiente" class="section section-3">
+        <h2>Meio Ambiente</h2>
+        <img src="./assets/img/imagem3.jpg" alt="Imagem de Meio Ambiente">
+    </div>
+    <div id="impacto" class="section section-4">
+        <h2>Impacto</h2>
+        <img src="./assets/img/imagem4.jpg" alt="Imagem de Impacto">
+    </div><br>
+
+
+    <h2 class="section section-5">Reflexão</h2>
+    <div class="videos">
+        
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/aNFsbPm1Nh8?si=FCcOMV4NypjROh27" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="./video/WhatsApp Video 2024-09-08 at 18.37.31.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div id="video" class="section section-5">
+        
+        <img src="./assets/img/imagem5.jpg" alt="Imagem de Vídeo">
+    </div>
+
+    
+    <div id="agradecimentos" class="section section-5">
+        <h2>Agradecimentos</h2>
+        <img src="./assets/img/imagem6.jpg" alt="Imagem de Vídeo">
+    </div>
+
+    
+    <footer>
+        Desenvolvido por Matheus e Padro em conjunto com IOS Instituto da Oportunidade Social
+    </footer>
+
+</body>
+</html>
